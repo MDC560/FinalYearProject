@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="3"
+            android:src="@drawable/ic_baseline_person_24"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="John"
+            android:textSize="40sp"
+            android:textColor="@android:color/black"
+            android:layout_weight="7"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+    <include layout="@layout/view"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_margin="20dp"
+                android:text="Medication"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/white_corner"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_margin="20dp"
+                android:text="Height"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/white_corner"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_margin="20dp"
+                android:text="Weight"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/white_corner"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_margin="20dp"
+                android:text="Type"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/white_corner"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctors orders."
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/white_corner"
+            android:hint="Hyperglaecemia"
+            android:textColorHint="@android:color/black"
+            android:paddingLeft="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/white_corner"
+            android:hint="Hypoglaecemia"
+            android:textColorHint="@android:color/black"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/white_corner"
+            android:hint="Target"
+            android:textColorHint="@android:color/black"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+
+    </LinearLayout>
+    <include
+        layout="@layout/bottom_navigation_view"/>
+</RelativeLayout>

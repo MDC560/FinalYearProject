@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E8E8	"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/home_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/round_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="TODAY"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/white_corner"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="66dp"
+            android:layout_height="69dp"
+            android:src="@drawable/ic_baseline_food_bank_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="150dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="@string/calories"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/white_corner"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="63dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_directions_run_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="150dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Activity"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/white_corner"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_bloodtype_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="150dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Blood glucose"
+            android:textColor="@android:color/black"
+            android:textSize="25dp"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/white_corner"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_medication_24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="150dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Medication"
+            android:textColor="@android:color/black"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+        
+    </RelativeLayout>
+
+</ScrollView>

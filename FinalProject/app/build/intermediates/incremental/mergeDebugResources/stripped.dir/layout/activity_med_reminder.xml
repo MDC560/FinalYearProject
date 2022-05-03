@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medication"
+        android:textSize="40sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="20dp"
+        android:background="@drawable/white_corner">
+        <TextView
+
+            android:id="@+id/medication_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refill reminder"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/medication_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="metformin 5"
+            android:layout_below="@+id/medication_title"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_medication_24"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/medication_count" />
+    </RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/medication_count_relative"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:background="@drawable/white_corner">
+
+    <TextView
+        android:id="@+id/med_count_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:text="Medication count"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/medication_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Metformin"
+        android:layout_below="@+id/med_count_title"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Insulin"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/medication_stock"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"/>
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_corner"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/medication_adherence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medication Adherence"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/medication_adherence"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/red_ball"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/green_ball"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+<include
+    layout="@layout/bottom_navigation_view"/>
+</RelativeLayout>

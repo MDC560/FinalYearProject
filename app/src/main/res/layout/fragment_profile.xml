@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F8F8F8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/ic_baseline_person_24" />
+
+                <TextView
+                    android:id="@+id/tvname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="7"
+                    android:text="Name"
+                    android:textColor="@android:color/black"
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+            <include layout="@layout/view" />
+
+            <RelativeLayout
+                android:id="@+id/calorie_card"
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/white_corner">
+
+                <ImageView
+                    android:layout_width="169dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/white_corner"
+                    android:src="@drawable/plan" />
+
+                <TextView
+                    android:id="@+id/tvTitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="27dp"
+                    android:text="Todays agenda"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitle1"
+                    android:layout_alignEnd="@+id/tvTitle1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginBottom="55dp"
+                    android:text="0 out of 4 completed" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/progress_relative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Medicine regimen"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_too_high"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/white_corner"
+                android:hint="Too High"
+                android:inputType="numberDecimal"
+                android:paddingLeft="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/black"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/et_too_low"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/white_corner"
+                android:hint="Too Low"
+                android:inputType="numberDecimal"
+                android:paddingStart="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/black"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/et_target"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/white_corner"
+                android:drawableEnd="@drawable/ic_baseline_done_24"
+                android:hint="No results found"
+                android:paddingStart="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/black" />
+
+
+            <EditText
+                android:id="@+id/etTwo"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/white_corner"
+                android:drawableEnd="@drawable/ic_baseline_done_24"
+                android:hint="No results found"
+                android:inputType="numberDecimal"
+                android:paddingStart="20dp"
+
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/black" />
+
+            <EditText
+                android:id="@+id/etThree"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/white_corner"
+                android:drawableEnd="@drawable/ic_baseline_done_24"
+                android:hint="No results found"
+                android:inputType="numberDecimal"
+                android:paddingStart="20dp"
+
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/black" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+
+</layout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5"
+        tools:context=".
+        TermsActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Terms and conditions"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="408dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="50dp"
+            android:textAlignment="center"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/round_border"
+            android:text="Diabeat-it is a software application which aims to provide support to users with type 1 or type 2 diabetes. \n
+            \nThe information provided does not aim to replace advice given by medical professionals or care givers. If you do not agree with these terms, kindly refrain from using our service."
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnGo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="50dp"
+            android:text="@string/go"
+            android:background="@drawable/round_bg"/>
+
+    </LinearLayout>
+</layout>

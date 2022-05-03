@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_height="wrap_content"
+        android:min="0"
+        android:progress="10"
+        android:max="100"
+        android:indeterminate="false"
+        app:layout_constraintBottom_toTopOf="@+id/Tvsteps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stepsTaken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Steps taken"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Tvsteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/stepsTaken"
+        app:layout_constraintStart_toStartOf="@+id/stepsTaken" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:background="#F5F5F5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/settings"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp"
+                        android:padding="12dp"
+                        android:text="My person info"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/tvPrivacy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:padding="12dp"
+                        android:text="Privacy"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/tvUnits"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="12dp"
+                        android:text="Units"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/tvMedication"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:padding="12dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Medication"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/tvDeleteAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:padding="12dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Delete account"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/tvFeedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="Feedback"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</layout>

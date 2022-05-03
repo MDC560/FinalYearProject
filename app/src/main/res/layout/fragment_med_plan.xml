@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#F5F5F5">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tell_us_about_your_treatement_plan"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"/>
+
+        <Button
+            android:id="@+id/btn_metformin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/round_border"
+            android:text="@string/metformin"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/btn_insulin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/round_border"
+            android:text="@string/insulin"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center" />
+
+        <EditText
+            android:id="@+id/TvDosage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_gravity="center"
+            android:padding="18dp"
+            android:hint="Medication dosage per day?"
+            android:textColorHint="@color/black"
+            android:background="@drawable/white_corner"
+            android:layout_marginEnd="40dp"/>
+
+        <EditText
+            android:id="@+id/etMetforminStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Days of Metformin stock"
+            android:textColorHint="@color/black"
+            android:textStyle="normal"
+            android:background="@drawable/round_border"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center"
+            android:padding="18dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/etInsulinStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Insulin units"
+            android:textColorHint="@color/black"
+            android:textStyle="normal"
+            android:background="@drawable/round_border"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center"
+            android:padding="18dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <EditText
+            android:id="@+id/etTestStrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Test strips"
+            android:textColorHint="@color/black"
+            android:textStyle="normal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_border"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center"
+            android:padding="18dp"/>
+
+        <Button
+            android:id="@+id/btnGo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:text="@string/go"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/round_bg"
+            android:drawableEnd="@drawable/ic_baseline_navigate_next_24"
+            android:drawablePadding="12dp"/>
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/go_back"
+            android:textColor="#3183d4"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+</layout>

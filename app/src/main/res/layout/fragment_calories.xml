@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <FrameLayout
+        android:background="#E8E8E8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                tools:context = ".Calories">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calories"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"/>
+
+                <RelativeLayout
+                    android:id="@+id/calorie_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/white_corner">
+
+                    <RelativeLayout
+                        android:id="@+id/progress_relative"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                    </RelativeLayout>
+
+                    <!--        <ProgressBar-->
+                    <!--            android:id="@+id/progress_calories"-->
+                    <!--            android:layout_width="match_parent"-->
+                    <!--            android:layout_height="match_parent"-->
+                    <!--            android:layout_alignParentEnd="true"-->
+                    <!--            android:layout_centerHorizontal="true"-->
+                    <!--            android:layout_marginEnd="79dp"-->
+                    <!--            android:indeterminate="false" />-->
+
+
+                    <TextView
+                        android:id="@+id/tvTotalCals"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="135dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="62dp"
+                        android:layout_marginBottom="42dp"
+                        android:text="@string/_0"
+                        android:textColor="@android:color/black"
+                        android:textSize="50sp" />
+
+                    <ImageView
+                        android:id="@+id/waterDrop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_toRightOf="@+id/tvTotalCals"
+                        android:foregroundGravity="center"
+                        android:src="@drawable/ic_baseline_water_drop_24" />
+
+                    <TextView
+                        android:id="@+id/tvWater"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="28dp"
+                        android:layout_toRightOf="@id/waterDrop"
+                        android:text="0"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/today"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp">
+
+                </TextView>
+                <RelativeLayout
+                    android:id="@+id/calorie_breakfast"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/white_corner">
+
+                    <ImageView
+                        android:id="@+id/egg"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_breakfast_dining_24" />
+
+
+                    <TextView
+                        android:id="@+id/tvToast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="80dp"
+                        android:text="@string/breakfast"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_Breakfast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:hint="@string/enter_breakfast_calories"
+                        android:paddingStart="80dp"
+                        android:textColorHint="#808080"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/white_corner">
+
+                    <EditText
+                        android:id="@+id/et_Snack2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:hint="Enter snack calories"
+                        android:paddingStart="80dp"
+                        android:textColorHint="#808080"
+                        android:textSize="16sp" />
+
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_cookie_24" />
+
+                    <TextView
+                        android:id="@+id/tvSnack2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="80dp"
+                        android:text="@string/snack"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/calorie_lunch"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/white_corner">
+
+                    <EditText
+                        android:id="@+id/et_Lunch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:hint="Enter lunch calories"
+                        android:paddingStart="80dp"
+                        android:textColorHint="#808080"
+                        android:textSize="16sp" />
+
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_lunch_dining_24" />
+
+                    <TextView
+                        android:id="@+id/tvLunch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="80dp"
+                        android:text="@string/lunch"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/calorie_snack3"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/white_corner">
+
+                    <EditText
+                        android:id="@+id/et_Snack3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:hint="Enter snack calories"
+                        android:paddingStart="80dp"
+                        android:textColorHint="#808080"
+                        android:textSize="16sp" />
+
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_cookie_24" />
+
+                    <TextView
+                        android:id="@+id/tvSnack3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="80dp"
+                        android:text="@string/snack"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tv_dinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/white_corner">
+
+                    <EditText
+                        android:id="@+id/et_Dinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:hint="Enter dinner calories"
+                        android:paddingStart="80dp"
+                        android:textColorHint="#808080"
+                        android:textSize="16sp" />
+
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_dinner_dining_24" />
+
+                    <TextView
+                        android:id="@+id/tvDinnerTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="80dp"
+                        android:text="@string/Dinner"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/calorie_snack"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/white_corner">
+
+                    <EditText
+                        android:id="@+id/et_Snack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:hint="Enter snack calories"
+                        android:paddingStart="80dp"
+                        android:textColorHint="#808080"
+                        android:textSize="16sp" />
+
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_cookie_24" />
+
+                    <TextView
+                        android:id="@+id/tvSnack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="80dp"
+                        android:text="Dessert"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/submit"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+</layout>
