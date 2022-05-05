@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.finalproject.MainActivity
 import com.example.finalproject.R
@@ -31,43 +32,44 @@ class LoginFragment : Fragment() {
         // Inflate the layout for this fragment
         loginViewModel = ViewModelProvider(this)[LoginViewModel::class.java]
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_login, container, false)
-        SharedPreferenceHelper.getSharedPreference(requireContext())
-       return binding.root
+
+        return binding.root
 
 
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        loginViewModel.liveDataLogin.observe(viewLifecycleOwner, Observer {userInfo->
+            Log.d("userInfo", userInfo.toString())
 
+            Log.d(TAG, "onViewCreated: "+userInfo.toString())
+            Log.d(TAG, "onViewCreated: "+userInfo.toString())
+
+            userInfo?.let {user->
+                SharedPreferenceHelper.setUserId(user.id)
+                startActivity(Intent(requireActivity(),MainActivity::class.java))
+            }
+
+
+        })
         binding.btnGo.setOnClickListener {
             val uEmail=binding.etEmail.text.toString()
-                val uPassword=binding.etPassword.text.toString()
+            val uPassword=binding.etPassword.text.toString()
 
-                if (uPassword.isEmpty() ||uEmail.isEmpty()){
-                    Toast.makeText(requireActivity(), "Please fill in all feilds.",Toast.LENGTH_SHORT).show()
-                }
-            else
-                {
-                    val userInfo=loginViewModel.getUserByEmailIdAndPassword(requireContext(),uEmail,uPassword)
-                    Log.d(TAG, "onViewCreated: "+userInfo.toString())
-                    Log.d(TAG, "onViewCreated: "+userInfo.toString())
-
-                    userInfo?.let {user->
-                        SharedPreferenceHelper.setUserId(user.id)
-                        startActivity(Intent(requireActivity(),MainActivity::class.java))
-                    }
+            loginViewModel.getUserByEmailIdAndPassword(requireContext(),uEmail,uPassword)
 
 
 
-                }
 
-
-
-            }
 
         }
 
+    }
+
 
 }
+
+
+
 

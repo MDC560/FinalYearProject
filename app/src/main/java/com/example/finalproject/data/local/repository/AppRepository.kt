@@ -74,13 +74,13 @@ class AppRepository {
 
         }
         fun getUser(context: Context, emailId: String, password: String) :User?{
-var  user:User?=null
-            loginDatabase = initializeDB(context)
-            CoroutineScope(IO).launch {
 
-                user=loginDatabase!!.userDao.getUserByEmailPassword(emailId, password)
-            }
-            return user;
+            loginDatabase = initializeDB(context)
+
+
+            return loginDatabase!!.userDao.getUserByEmailPassword(emailId, password)
+
+
 
         }
 
