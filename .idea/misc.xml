@@ -14,10 +14,15 @@
         <entry key="..\:/Users/mchis/Documents/projectlatest/FinalProject/FinalProject/app/src/main/res/layout/fragment_med_counter.xml" value="0.1875" />
         <entry key="..\:/Users/mchis/Documents/projectlatest/FinalProject/FinalProject/app/src/main/res/layout/fragment_med_plan.xml" value="0.25" />
         <entry key="..\:/Users/mchis/Documents/projectlatest/FinalProject/FinalProject/app/src/main/res/layout/fragment_type.xml" value="0.25" />
+        <entry key="..\:/Users/mchis/NewFinalProject/FinalYearProject/app/src/main/res/layout/fragment_chart.xml" value="0.25" />
+        <entry key="..\:/Users/mchis/NewFinalProject/FinalYearProject/app/src/main/res/layout/fragment_exercise.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/mchis/NewFinalProject/FinalYearProject/app/src/main/res/layout/fragment_exercise_entries.xml" value="0.25" />
+        <entry key="..\:/Users/mchis/NewFinalProject/FinalYearProject/app/src/main/res/layout/fragment_home_page.xml" value="0.25" />
+        <entry key="..\:/Users/mchis/NewFinalProject/FinalYearProject/app/src/main/res/layout/fragment_splash.xml" value="0.10989583333333333" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

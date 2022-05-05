@@ -8,5 +8,5 @@ data class UserExercise (
     @PrimaryKey(autoGenerate = true)
     val id : Long = 0L, val userId: Long = 0L,
 
-    val burntCalories: Int, val time: Int, val type: String, val name: String
+    val burntCalories: Int, val time: String, val type: String, val name: String
         )

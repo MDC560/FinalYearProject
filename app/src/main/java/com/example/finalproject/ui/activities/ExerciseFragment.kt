@@ -16,6 +16,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.finalproject.R
 import com.example.finalproject.data.ViewPagerData
+import com.example.finalproject.data.local.SharedPreferenceHelper
 import com.example.finalproject.data.local.database.AppDatabase
 import com.example.finalproject.data.local.model.UserExercise
 import com.example.finalproject.databinding.FragmentExerciseBinding
@@ -38,7 +39,7 @@ class ExerciseFragment : Fragment() {
         exerciseViewModel = ViewModelProvider(this)[ExerciseViewModel::class.java]
 
 
-
+        SharedPreferenceHelper.getSharedPreference(requireContext())
         val name = binding.etModerate.text.toString()
         val options = arrayOf<String>("Select Type","Moderate", "Vigorous")
         val arrayAdapter = ArrayAdapter<String>(requireContext(), android.R.layout.simple_spinner_dropdown_item,android.R.id.text1, options)
@@ -66,7 +67,11 @@ class ExerciseFragment : Fragment() {
             binding.tvTotalDistance.text = selectedType
             clear()
 
-            val activity = UserExercise(burntCalories = 2, time=1, type=selectedType, name = name)
+            val useid = SharedPreferenceHelper.getUserId()
+
+
+
+            val activity = UserExercise(burntCalories = 2, userId =useid , time="1", type=selectedType, name = name)
             try {
                 exerciseViewModel.insertData(requireContext(), activity)
             }
