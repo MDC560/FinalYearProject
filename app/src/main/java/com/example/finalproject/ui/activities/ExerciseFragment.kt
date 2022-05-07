@@ -70,8 +70,8 @@ class ExerciseFragment : Fragment() {
             val useid = SharedPreferenceHelper.getUserId()
 
 
-
-            val activity = UserExercise(burntCalories = 2, userId =useid , time="1", type=selectedType, name = name)
+            Log.d(TAG, "onCreateView: "+name+" "+totalTime)
+            val activity = UserExercise(burntCalories = 2, userId =useid , time="1", type=selectedType, name = "asdds")
             try {
                 exerciseViewModel.insertData(requireContext(), activity)
             }
