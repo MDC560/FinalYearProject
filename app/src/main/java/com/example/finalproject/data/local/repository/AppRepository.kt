@@ -50,5 +50,9 @@ class AppRepository {
             loginDatabase = initializeDB(context)
             return loginDatabase!!.userDao.getUserByEmailPassword(emailId, password)
         }
+        fun getUserActivitiesByUserId(context:Context,userId:Long) :List<UserExercise>?{
+            loginDatabase = initializeDB(context)
+            return loginDatabase!!.userActivitiesDao.activitiesList(userId)
+        }
     }
 }

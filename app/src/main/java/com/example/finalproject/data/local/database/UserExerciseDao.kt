@@ -12,7 +12,7 @@ interface  UserExerciseDao {
 
     @Query("SELECT * FROM Activities ")
      fun getAllActivities (): List<UserExercise>
-    @Query (" SELECT * FROM Activities WHERE userId =:id" )
-     fun activitiesList(id:Long): List<UserExercise>
+    @Query (" SELECT * FROM Activities WHERE userId =:userId" )
+     fun activitiesList(userId:Long): List<UserExercise>
 
 }

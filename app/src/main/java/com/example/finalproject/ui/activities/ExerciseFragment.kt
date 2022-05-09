@@ -40,7 +40,7 @@ class ExerciseFragment : Fragment() {
 
 
         SharedPreferenceHelper.getSharedPreference(requireContext())
-        val name = binding.etModerate.text.toString()
+
         val options = arrayOf<String>("Select Type","Moderate", "Vigorous")
         val arrayAdapter = ArrayAdapter<String>(requireContext(), android.R.layout.simple_spinner_dropdown_item,android.R.id.text1, options)
         binding.EtSpinner.adapter=arrayAdapter
@@ -56,8 +56,9 @@ class ExerciseFragment : Fragment() {
         sharedPref = requireActivity().getSharedPreferences(getString(R.string.preference_file_key),Context.MODE_PRIVATE)
 
         binding.btnSubmit.setOnClickListener {
+            val name = binding.etModerate.text.toString()
             //ViewPagerData.yourActivities = binding.etModerate.text.toString()
-              binding.tvTest.text = binding.etModerate.text.toString()
+              binding.tvTest.text = name
 
               val totalTime ="${if(binding.NumPickModHrs.value / 10 > 0)binding.NumPickModHrs.value else "0${binding.NumPickModHrs.value}"}:" +
                       "${if(binding.NumPickModMins.value / 10 > 0)binding.NumPickModMins.value else "0${binding.NumPickModMins.value}"}:" +
@@ -65,13 +66,13 @@ class ExerciseFragment : Fragment() {
             binding.tvTotalTime.text = totalTime
 
             binding.tvTotalDistance.text = selectedType
-            clear()
+
 
             val useid = SharedPreferenceHelper.getUserId()
 
 
             Log.d(TAG, "onCreateView: "+name+" "+totalTime)
-            val activity = UserExercise(burntCalories = 2, userId =useid , time="1", type=selectedType, name = "asdds")
+            val activity = UserExercise(burntCalories = 2, userId =useid , time=totalTime, type=selectedType, name = name)
             try {
                 exerciseViewModel.insertData(requireContext(), activity)
             }
@@ -80,6 +81,7 @@ class ExerciseFragment : Fragment() {
                 Log.d(ContentValues.TAG, "onCreateView: "+e.message)
 
             }
+
         }
         //Log.d(TAG, "onCreateView: " +burntCals + ""+tTime) //
 
