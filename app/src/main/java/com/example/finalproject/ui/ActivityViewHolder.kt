@@ -8,10 +8,12 @@ import com.example.finalproject.data.local.model.UserExercise
 
 class ActivityViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
-    var textView = view.findViewById<TextView>(R.id.tv_activity_name)
+    val activityName = view.findViewById<TextView>(R.id.tv_activity_name)
+    val activityTime = view.findViewById<TextView>(R.id.tv_time)
     fun onBind(userExcercise:UserExercise)
     {
-        textView.text = userExcercise.name
+        activityName.text = userExcercise.name
+        activityTime.text =userExcercise.time
     }
 
 }
